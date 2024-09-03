@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #d3eaf5;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Cielo Section */
+#cielo {
+    background-color: #e0f7fa;
+    color: #0277bd;
+}
+
+
+#cielo .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+    gap: 10px;
+}
+
+#cielo .gallery img {
+    width: 100%;
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Asegura que la imagen se recorte para llenar el contenedor */
+    margin: 10px;
+}
+/* Tierra Section */
+#tierra {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+#tierra .gallery img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/* Responsive Design */
+@media (min-width: 320px) and (max-width: 480px) {
+    .gallery {
+        display: flex;
+        justify-content: center;
+    }
+
+    .gallery img {
+        flex: 1;
+        margin: 0 10px;
+        max-width: 30%;
+    }
+}
+
