@@ -29,6 +29,14 @@ header h1 {
     margin-bottom: 20px;
 }
 
+.section p {
+    font-size: 1.1em;
+    width: 100%; /* Asegura que el párrafo ocupe el 100% del ancho del contenedor */
+    max-width: 800px; /* Limita el ancho máximo para mejorar la legibilidad en pantallas grandes */
+    margin: 0 auto; /* Centra el párrafo horizontalmente */
+    padding: 0 15px; /* Añade un padding para evitar que el texto toque los bordes en dispositivos móviles */
+}
+
 /* Cielo Section */
 #cielo {
     background-color: #01446A;
@@ -82,7 +90,7 @@ footer {
 }
 
 /* Responsive Design */
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 600px) {
     .gallery {
         display: flex;
         justify-content: center;
@@ -91,7 +99,17 @@ footer {
     .gallery img {
         flex: 1;
         margin: 0 10px;
-        max-width: 30%;
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    .section p {
+        font-size: 1em; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+        max-width: 600px; /* Limita el ancho máximo para mejorar la legibilidad en pantallas grandes */
+        margin: 0 auto; /* Centra el párrafo horizontalmente */
+        padding: 0 15px; /* Añade un padding para evitar que el texto toque los bordes en dispositivos móviles */
+        box-sizing: border-box; /* Incluye el padding en el ancho total */
+        width: 280px;
     }
 }
 
