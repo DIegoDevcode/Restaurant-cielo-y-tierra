@@ -8,31 +8,31 @@ body {
 }
 
 header {
-    background-color: #d3eaf5;
-    color: #333;
+    background-color: #25455F;
+    color: #FFFFFF;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 1.7em;
 }
 
 .section {
-    padding: 50px 20px;
+    padding: 15px;
     text-align: center;
 }
 
 .section h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     margin-bottom: 20px;
 }
 
 /* Cielo Section */
 #cielo {
-    background-color: #e0f7fa;
-    color: #0277bd;
+    background-color: #01446A;
+    color:#FFFFFF ;
 }
 
 
@@ -48,15 +48,27 @@ header h1 {
     object-fit: cover; /* Asegura que la imagen se recorte para llenar el contenedor */
     margin: 10px;
 }
+
+#cielo .gallery h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
 /* Tierra Section */
 #tierra {
-    background-color: #ffebee;
-    color: #c62828;
+    background-color: #67330E;
+    color: #FEFEFB;
+}
+#tierra .gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+    gap: 10px;
 }
 
 #tierra .gallery img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Asegura que la imagen se recorte para llenar el contenedor */
     margin: 10px;
 }
 
